@@ -11,6 +11,7 @@ public class SongTest {
 		Song song = new Song("Songname","",2,"TestGenere");
 		assertEquals("TestGenere", song.getSongGenere());
 		assertEquals("Songname", song.getSongName());
+		assertEquals(2, song.getSongLength());
 	}
 
 }
