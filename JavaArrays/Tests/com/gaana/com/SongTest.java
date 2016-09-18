@@ -8,8 +8,9 @@ public class SongTest {
 
 	@Test
 	public void testGetSongGenere() {
-		Song song = new Song("","",2,"TestGenere");
-		assertEquals("TestGenere1", song.getSongGenere());
+		Song song = new Song("Songname","",2,"TestGenere");
+		assertEquals("TestGenere", song.getSongGenere());
+		assertEquals("Songname", song.getSongName());
 	}
 
 }
