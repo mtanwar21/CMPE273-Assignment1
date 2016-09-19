@@ -10,7 +10,7 @@ inherits = function(ctor, superCtor) {
     }
   });
 };
-
+var str="";
 var CarBrand =function(name){
 
 	this.name=name;
@@ -18,17 +18,17 @@ var CarBrand =function(name){
 
 CarBrand.prototype.carName = function(){
 
-	console.log("This car is made by "+this.name);
+	 alert("       This car is made by    "+this.name);
 };
 
 CarBrand.prototype.carValue = function(){
 
-	console.log("This car is made by "+this.name +" and is ver expensive");
+	alert("      This car is made by  "+this.name +" and is ver expensive           ");
 };
 
 CarBrand.prototype.carType = function(){
 
-	console.log("This car is made by "+this.name);
+	alert("      This car is made by "+this.name);
 };
 
 var jaguar =new CarBrand("jaguar");
@@ -44,13 +44,14 @@ inherits(CarType,CarBrand);
 
 CarType.prototype.showCarType= function(){
 
-	console.log("This car name is " +this.name +" and brand is " +this.type);
+	alert("          This car name is " +this.name +" and brand is       " +this.type);
 };
 
 
 CarType.prototype.carValue= function(){
 
-	console.log("This car name is " +this.name +" and brand is " +this.type+"makes it  sup super duper expensive" );
+	 alert( "       This car name is " +this.name +" and brand is " +this.type+"          makes it  sup super duper expensive          ") ;
+
 };
 
 var ferrari = new CarType("Ferrari" ,"Sport Car");
